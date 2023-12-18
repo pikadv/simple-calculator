@@ -18,6 +18,7 @@ button {
   width: 100vw;
   min-width: 360px;
   height: 100vh;
+  min-height: 520px;
   background: linear-gradient(
     167deg,
     #f7f8fb -5.94%,
