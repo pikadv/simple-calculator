@@ -14,30 +14,31 @@ button {
   border: none;
   outline: none;
 }
-.container {
-  width: 100vw;
+.wrapper {
+  display: grid;
+  min-height: 100vh;
   min-width: 360px;
-  height: 100vh;
-  min-height: 520px;
   background: linear-gradient(
     167deg,
     #f7f8fb -5.94%,
     rgba(247, 248, 251, 0.19) 103.62%
   );
   backdrop-filter: blur(51px);
+  align-content: center;
 }
 .calculator {
-  height: 100%;
+  height: fit-content;
   width: 360px;
   overflow: hidden;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 2rem;
   gap: 1rem;
 }
 .display {
+  height: 15rem;
   resize: none;
   background: none;
   color: #424242;
@@ -53,6 +54,7 @@ button {
   display: none;
 }
 .buttons {
+  height: fit-content;
   display: grid;
   grid-template-columns: repeat(4, 3.875rem);
   grid-template-rows: repeat(5, 3.875rem);
