@@ -13,6 +13,7 @@ button {
   font-family: inherit;
   border: none;
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .wrapper {
   display: grid;
