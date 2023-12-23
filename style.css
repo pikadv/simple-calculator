@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Poppins;
   background: #109dff;
 }
+
 textarea,
 button {
   font-family: inherit;
@@ -15,6 +18,7 @@ button {
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }
+
 .wrapper {
   display: grid;
   min-height: 100vh;
@@ -27,6 +31,7 @@ button {
   backdrop-filter: blur(51px);
   align-content: center;
 }
+
 .calculator {
   height: fit-content;
   width: 360px;
@@ -38,6 +43,7 @@ button {
   padding: 2rem;
   gap: 1rem;
 }
+
 .display {
   height: 15rem;
   resize: none;
@@ -51,9 +57,11 @@ button {
   padding: 0.5rem;
   backdrop-filter: blur(6px);
 }
+
 .display::-webkit-scrollbar {
   display: none;
 }
+
 .buttons {
   height: fit-content;
   display: grid;
@@ -64,6 +72,7 @@ button {
   gap: 1rem;
   user-select: none;
 }
+
 .btn {
   font-weight: bold;
   padding: 0.375rem 0.25rem;
@@ -81,20 +90,42 @@ button {
   backdrop-filter: blur(6px);
   cursor: pointer;
 }
+
 .tall-space {
   grid-row: span 3;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+
 .rect-port {
   height: 100%;
   border-radius: 0.75rem;
 }
+
 .rect-land {
   grid-column: span 2;
 }
+
 .accent {
+  box-shadow: 0px 0px 20px 0px rgba(0, 255, 153, 0.65);
+  background: #19ffae;
+}
+
+.btn:hover {
+  background: linear-gradient(
+    130deg,
+    rgba(255, 255, 255, 0.6) -9.69%,
+    rgba(255, 255, 255, 0) 114.23%
+  );
+}
+
+.accent:hover {
+  box-shadow: 0px 0px 20px 0px hsla(156, 90%, 50%, 0.651);
+  background: hsl(159, 90%, 55%);
+}
+
+.btn:active {
   box-shadow: 0px 0px 20px 0px rgba(0, 255, 153, 0.65);
   background: #19ffae;
 }
