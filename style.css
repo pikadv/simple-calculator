@@ -45,9 +45,10 @@ button {
 }
 
 .display {
-  height: 15rem;
-  resize: none;
-  background: none;
+  display: grid;
+  word-break: break-all;
+  height: fit-content;
+  min-height: 6rem;
   color: #424242;
   font-size: 3rem;
   font-weight: 500;
