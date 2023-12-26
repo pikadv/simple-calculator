@@ -48,7 +48,8 @@ button {
   display: grid;
   word-break: break-all;
   height: fit-content;
-  min-height: 6rem;
+  height: 8rem;
+  overflow: auto;
   color: #424242;
   font-size: 3rem;
   font-weight: 500;
